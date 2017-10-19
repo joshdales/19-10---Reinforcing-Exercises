@@ -5,8 +5,12 @@ seats = [
   ["Smokey","Toast","Pacha","Mau"]
 ]
 
-seats.each_with_index do |row, index|
-  row.each do |seat|
-    puts "Row #{index + 1} seat #{seat}"
+seats.each_with_index do |row, r_index|
+  row.each_with_index do |seat, s_index|
+    if seat == nil
+      puts "Row #{r_index + 1 } seat #{s_index} is free"
+    else
+      puts "Row #{r_index + 1} seat #{seat}"
+    end
   end
 end
