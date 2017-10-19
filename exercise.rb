@@ -14,7 +14,8 @@ seats.each_with_index do |row, r_index|
         puts "What is your name?"
         your_name = gets.chomp
         row[s_index] = your_name
-        return seats
+        p seats
+        return
       end
     end
   end
